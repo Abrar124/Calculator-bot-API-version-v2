@@ -1,0 +1,58 @@
+{
+  "id": "073359f5-d210-46d8-920f-0aa508508459",
+  "name": "Division",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Divide",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2d11304f-0e10-4844-abe1-14f3b56dd273",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter the first number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "28776017-ab8e-49cb-b652-9dab57c8050f",
+          "required": true,
+          "dataType": "@number2",
+          "name": "number2",
+          "value": "$number2.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter the second number"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "something went wrong in Division"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550681322,
+  "fallbackIntent": false,
+  "events": []
+}

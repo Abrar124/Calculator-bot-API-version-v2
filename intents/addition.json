@@ -1,0 +1,74 @@
+{
+  "id": "3ed55bc7-1234-4dce-9366-6dc2d30f3d9e",
+  "name": "addition",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "addition",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fabd2881-e7af-4df4-b31b-6e8c5ae27048",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what is the first number"
+            },
+            {
+              "lang": "en",
+              "value": "tell me the first number"
+            },
+            {
+              "lang": "en",
+              "value": "your first number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "3e5c1e22-6659-424b-8e1b-3d09765276db",
+          "required": true,
+          "dataType": "@number2",
+          "name": "number2",
+          "value": "$number2.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what is the second number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "8a74f953-32b5-449c-9d11-fae20a9b0fe2",
+          "required": false,
+          "dataType": "@addition",
+          "name": "addition",
+          "value": "$addition",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "something wrong in addition"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1548779274,
+  "fallbackIntent": false,
+  "events": []
+}

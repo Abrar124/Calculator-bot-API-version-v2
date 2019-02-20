@@ -1,0 +1,66 @@
+{
+  "id": "b1a8bde1-de0e-4c66-9476-8547b5bbab9d",
+  "name": "Subtraction",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "subtraction",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0cc93b81-8cf7-4bc6-9e78-635059d21132",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is first number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "7eb7acaf-53d1-4eb2-8d16-4941160eba2f",
+          "required": true,
+          "dataType": "@number2",
+          "name": "number2",
+          "value": "$number2.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter the second value"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "6d9c224a-a25c-4add-81cb-fc499ca55fbd",
+          "required": false,
+          "dataType": "@subtraction",
+          "name": "subtraction",
+          "value": "$subtraction",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "something went wrong in subtraction"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549531959,
+  "fallbackIntent": false,
+  "events": []
+}

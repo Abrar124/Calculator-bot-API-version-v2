@@ -1,0 +1,58 @@
+{
+  "id": "b37d593d-4166-4f4e-a7db-f4003cc9f57a",
+  "name": "Multiplication",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Multiply",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "a407bf42-f454-4def-a4ff-9c7ffacdbe47",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your first number"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "74c9223f-b9cc-4822-802f-479797c37792",
+          "required": true,
+          "dataType": "@number2",
+          "name": "number2",
+          "value": "$number2.original",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter the second number"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1549531980,
+  "fallbackIntent": false,
+  "events": []
+}
