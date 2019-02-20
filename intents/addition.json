@@ -1,56 +1,36 @@
 {
-  "id": "3ed55bc7-1234-4dce-9366-6dc2d30f3d9e",
-  "name": "addition",
+  "id": "25f311b9-42dc-4989-a262-187734676414",
+  "name": "Addition",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "addition",
+      "action": "Addition",
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "fabd2881-e7af-4df4-b31b-6e8c5ae27048",
-          "required": true,
-          "dataType": "@sys.number",
-          "name": "number",
-          "value": "$number",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "what is the first number"
-            },
-            {
-              "lang": "en",
-              "value": "tell me the first number"
-            },
-            {
-              "lang": "en",
-              "value": "your first number"
-            }
-          ],
-          "isList": false
-        },
-        {
-          "id": "3e5c1e22-6659-424b-8e1b-3d09765276db",
-          "required": true,
-          "dataType": "@number2",
-          "name": "number2",
-          "value": "$number2.original",
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "what is the second number"
-            }
-          ],
-          "isList": false
-        },
-        {
-          "id": "8a74f953-32b5-449c-9d11-fae20a9b0fe2",
+          "id": "4428db64-bf97-4155-bb89-67168a524c58",
           "required": false,
           "dataType": "@addition",
           "name": "addition",
           "value": "$addition",
+          "isList": false
+        },
+        {
+          "id": "e43daf27-81b4-4326-80de-c32fcf4d1889",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        },
+        {
+          "id": "f217c0d6-9284-46da-813b-3916780d11f1",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
           "isList": false
         }
       ],
@@ -58,7 +38,7 @@
         {
           "type": 0,
           "lang": "en",
-          "speech": "something wrong in addition"
+          "speech": "Something went wrong"
         }
       ],
       "defaultResponsePlatforms": {},
@@ -68,7 +48,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1548779274,
+  "lastUpdate": 1550684070,
   "fallbackIntent": false,
   "events": []
 }

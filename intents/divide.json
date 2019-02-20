@@ -1,36 +1,33 @@
 {
-  "id": "9a7cd87f-f674-4bad-aa53-34f63fb1e2af",
-  "name": "subtraction",
+  "id": "7fcabc73-a073-4af8-bd26-1fc8b2c43b00",
+  "name": "divide",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "subtraction",
+      "action": "divide",
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "d579f4f1-600a-4e41-b173-f2a904f8ee4e",
-          "required": false,
-          "dataType": "@subtraction",
-          "name": "subtraction",
-          "value": "$subtraction",
-          "isList": false
-        },
-        {
-          "id": "2277e9e1-0cfb-40dd-8e5f-4a990f87b219",
-          "required": false,
+          "id": "a4c5bb72-42cb-49e9-88f1-7743af11194d",
           "dataType": "@sys.number",
           "name": "number",
           "value": "$number",
           "isList": false
         },
         {
-          "id": "dd08c08f-bf8e-4fed-98ca-735a3be1732b",
-          "required": false,
+          "id": "fbfc8754-0580-4a9a-82c9-794679cc6d61",
           "dataType": "@sys.number",
           "name": "number1",
           "value": "$number1",
+          "isList": false
+        },
+        {
+          "id": "2445bf65-e3f1-4d93-a71e-e7adfb9a45ff",
+          "dataType": "@Divide",
+          "name": "Divide",
+          "value": "$Divide",
           "isList": false
         }
       ],
@@ -48,7 +45,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "lastUpdate": 1550683966,
+  "lastUpdate": 1550683613,
   "fallbackIntent": false,
   "events": []
 }
